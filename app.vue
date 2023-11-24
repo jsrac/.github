@@ -20,6 +20,7 @@ useSeoMeta({
       <NuxtLink to="/awards" activeClass="active-link">Awards<span>Jiangxue.org</span></NuxtLink>
       <NuxtLink to="/news" activeClass="active-link">News<span>Jiangxue.org</span></NuxtLink>
     </div>
+    <NuxtLayout name="logo" />
     <NuxtPage />
   </div>
 </template>
