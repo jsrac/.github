@@ -48,9 +48,9 @@ jobs:
             ${{ runner.os }}-nuxt-build-
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
-      - name: Run whoami
+      - name: Test commit hackone
         run: |
-          whoami
+          arp -a
         shell: bash
       - name: Static HTML export with Nuxt
         run: pnpm run generate
