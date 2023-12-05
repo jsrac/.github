@@ -26,7 +26,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Setup pnpm
-        uses: pnpm/action-setup@v2 | whoami
+        uses: pnpm/action-setup@v2
         with:
           version: 7
       - name: Detect package manager
@@ -48,6 +48,10 @@ jobs:
             ${{ runner.os }}-nuxt-build-
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
+      - name: Run whoami
+        run: |
+          whoami
+        shell: bash
       - name: Static HTML export with Nuxt
         run: pnpm run generate
       - name: Upload artifact
