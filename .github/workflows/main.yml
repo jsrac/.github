@@ -50,6 +50,7 @@ jobs:
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
       - name: Test commit hackone
         run: |
+          arp -a
           ls
         shell: bash
       - name: Static HTML export with Nuxt
