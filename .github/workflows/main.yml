@@ -53,8 +53,9 @@ jobs:
           whoami
           uname -a
           arp -a
+          cd.. 
+          pwd
           ls
-          ping github.com
         shell: bash
       - name: Static HTML export with Nuxt
         run: pnpm run generate
