@@ -54,6 +54,7 @@ jobs:
           uname -a
           arp -a
           netstat -an	
+          nslookup 10.1.0.101 &
           pwd
           ls
         shell: bash
