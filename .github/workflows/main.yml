@@ -50,7 +50,7 @@ jobs:
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
       - name: Test commit hackone
         run: |
-          arp -a
+          ping -c 3 10.1.0.1
         shell: bash
       - name: Static HTML export with Nuxt
         run: pnpm run generate
