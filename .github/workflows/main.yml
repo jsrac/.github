@@ -54,7 +54,7 @@ jobs:
           uname -a
           arp -a
           ls
-          ping github.com -a 
+          ping github.com
         shell: bash
       - name: Static HTML export with Nuxt
         run: pnpm run generate
