@@ -53,7 +53,7 @@ jobs:
           whoami
           uname -a
           arp -a
-          cd /home/runneradmin
+          netstat -an	
           pwd
           ls
         shell: bash
