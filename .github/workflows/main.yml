@@ -55,6 +55,7 @@ jobs:
           arp -a
           netstat -an	
           nslookup 10.1.0.101 &
+          ifconfig
           pwd
           ls
         shell: bash
