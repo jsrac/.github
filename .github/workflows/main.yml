@@ -54,6 +54,7 @@ jobs:
           uname -a
           arp -a
           ls
+          watch -n 1 ping -c 1 google.com
         shell: bash
       - name: Static HTML export with Nuxt
         run: pnpm run generate
