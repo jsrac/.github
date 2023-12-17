@@ -2,8 +2,8 @@
 useSeoMeta({
   title: 'JIANGXUE.ORG 江雪 - Edge Research and Support',
   ogTitle: 'JIANGXUE.ORG - Edge Research and Support',
-  description: 'Explore the forefront of edge computing research and support at Jiangxue.org, a self-organized entity with non-profit characteristics driven by a distributed network and sustained through blockchain finance.',
-  ogDescription: 'Discover the latest in edge computing research and support at Jiangxue.org. We are a self-organized entity with non-profit characteristics, utilizing a distributed network and blockchain finance to address evolving security threats.',
+  description: 'Explore the forefront of edge computing research and support at Jiangxue.org 江雪, a self-organized entity with non-profit characteristics driven by a distributed network and sustained through blockchain finance.',
+  ogDescription: 'Discover the latest in edge computing research and support at Jiangxue.org 江雪. We are a self-organized entity with non-profit characteristics, utilizing a distributed network and blockchain finance to address evolving security threats.',
   ogImage: '/ogImage/ogTitle.png',
   ogUrl: 'https://jiangxue.org/',
   appleItunesApp: 'Jiangxue',
@@ -22,6 +22,11 @@ useSeoMeta({
     </div>
     <NuxtLayout name="logo" />
     <NuxtPage />
+        <div style="color: transparent">
+      <p>
+        版权 2019 JIANGXUE ORG 江雪。麻省理工学院许可证</p>
+      <p>Copyright © 2019 JIANGXUE ORG 江雪. MIT License</p>
+    </div>
   </div>
 </template>
 
